@@ -30,7 +30,7 @@ Also add this sysctl(8) variable to /etc/sysctl.conf to make the change permanen
 
     # echo 'compat.linux.osrelease=2.6.18' >> /etc/sysctl.conf
 
-Note that it's necessary have enabled LBC before you can install Skype4 port. Read for further details the corresponding Chapter 11. Linux Binary Compatibility of the FreeBSD Handbook.
+Note that it's necessary have enabled LBC before you can install `net-im/skype4` port. Read for further details the corresponding Chapter 11. Linux Binary Compatibility of the FreeBSD Handbook.
     
 You will need to merge the skype4-ports into your /usr/ports. Now you are ready to install `net-im/skype4`.
 
