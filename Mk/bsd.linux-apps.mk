@@ -141,6 +141,7 @@ cyrus-sasl2_DETECT=	${cyrus-sasl2${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 cyrus-sasl2_PORT=	${PORTSDIR}/security/linux${LINUX_DIST_SUFFIX}-cyrus-sasl2
 
 dbusglib_f10_FILE=	${LINUXBASE}/usr/lib/libdbus-glib-1.so.2
+dbusglib_c6_FILE=	${LINUXBASE}/usr/lib/libdbus-glib-1.so.2
 dbusglib_DETECT=	${dbusglib${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 dbusglib_PORT=		${PORTSDIR}/devel/linux${LINUX_DIST_SUFFIX}-dbus-glib
 dbusglib_DEPENDS=	dbuslibs expat
@@ -198,6 +199,7 @@ gtk2_PORT=			${PORTSDIR}/x11-toolkits/linux${LINUX_DIST_SUFFIX}-gtk2
 gtk2_DEPENDS=		atk jpeg png pango tiff xorglibs
 
 hicontheme_f10_FILE=	${LINUXBASE}/usr/share/icons/hicolor
+hicontheme_c6_FILE=	${LINUXBASE}/usr/share/icons/hicolor
 hicontheme_DETECT=	${hicontheme${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 hicontheme_PORT=	${PORTSDIR}/x11-themes/linux${LINUX_DIST_SUFFIX}-hicolor-icon-theme
 
