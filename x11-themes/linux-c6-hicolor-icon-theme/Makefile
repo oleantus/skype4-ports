@@ -18,10 +18,10 @@ RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicol
 NO_BUILD=	yes
 USE_LINUX=	c6
 USE_LINUX_PREFIX=	yes
-PLIST_FILES=	usr/share/icons/hicolor
+PLIST_FILES=	usr/local/share/icons/hicolor
 
 do-install:
-	${INSTALL} -d ${STAGEDIR}${PREFIX}/usr/share/icons
-	${LN} -fs ${LOCALBASE}/share/icons/hicolor ${STAGEDIR}${PREFIX}/usr/share/icons
+	${INSTALL} -d ${STAGEDIR}${PREFIX}/usr/local/share/icons
+	${LN} -sf ${LOCALBASE}/local/share/icons/hicolor ${STAGEDIR}${PREFIX}/usr/local/share/icons
 
 .include <bsd.port.mk>
