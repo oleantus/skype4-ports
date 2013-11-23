@@ -20,8 +20,9 @@ USE_LINUX=	c6
 USE_LINUX_PREFIX=	yes
 PLIST_FILES=	usr/local/share/icons/hicolor
 
+NO_STAGE=	yes
 do-install:
 	${INSTALL} -d ${STAGEDIR}${PREFIX}/usr/local/share/icons
-	${LN} -sf ${LOCALBASE}/local/share/icons/hicolor ${STAGEDIR}${PREFIX}/usr/local/share/icons
+	${LN} -sf ${LOCALBASE}/share/icons/hicolor ${STAGEDIR}${PREFIX}/usr/local/share/icons
 
 .include <bsd.port.mk>
