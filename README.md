@@ -36,3 +36,14 @@ You will need to merge the skype4-ports into your /usr/ports. Now you are ready 
 
     # portmaster net-im/skype4
 
+If you want video calls support you should also replace linux_videodev2.h header from `multimedia/linux_v4l2wrapper-kmod` port:
+
+    # cd /usr/ports/multimedia/linux_v4l2wrapper-kmod
+    # make patch
+    # mv -i /sys/compat/linux/linux_videodev2.h{,.bak}
+    # cp -i work/linux_v4l2/linux_videodev2.h /sys/compat/linux
+ 
+However, this patch is already applied for FreeBSD 10 and CURRENT.
+    
+
+
