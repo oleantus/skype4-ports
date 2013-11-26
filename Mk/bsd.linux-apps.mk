@@ -264,6 +264,7 @@ libssh2_PORT=		${PORTSDIR}/security/linux${LINUX_DIST_SUFFIX}-libssh2
 libssh2_DEPENDS=	openssl
 
 libv4l_f10_FILE=	${LINUXBASE}/usr/lib/libv4l1.so.0
+libv4l_c6_FILE=		${LINUXBASE}/usr/lib/libv4l1.so.0
 libv4l_DETECT=		${libv4l${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 libv4l_PORT=		${PORTSDIR}/multimedia/linux${LINUX_DIST_SUFFIX}-libv4l
 
