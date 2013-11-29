@@ -24,7 +24,8 @@
 #					  (components), covered here.
 # OVERRIDE_LINUX_NONBASE_PORTS
 #			- This specifies a none-default linux infrastructure ports to use.
-#					  The valid value is "f10" to use Linux Fedora 10 ports.
+#					  The valid value is "f10" to use Linux Fedora 10 ports
+#					  and "c6" to use Linux CentOS 6 ports.
 #					  This is an user-only variable. Don't use it in any port,
 #					  it's meant to be used in make.conf.
 

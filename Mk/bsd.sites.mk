@@ -259,6 +259,12 @@ MASTER_SITE_EXIM+= \
 	http://ftp.exim.llorien.org/exim/%SUBDIR%
 .endif
 
+.if !defined(IGNORE_MASTER_SITE_CENTOS_LINUX)
+MASTER_SITE_CENTOS_LINUX+= \
+	http://mirror.centos.org/centos/%SUBDIR%/ \
+	http://vault.centos.org/%SUBDIR%/
+.endif
+
 .if !defined(IGNORE_MASTER_SITE_FEDORA_LINUX)
 MASTER_SITE_FEDORA_LINUX+= \
 	http://archives.fedoraproject.org/pub/archive/fedora/linux/core/%SUBDIR%/ \
