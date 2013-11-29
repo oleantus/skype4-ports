@@ -58,8 +58,13 @@ LINUX_RPM_ARCH?=	${ARCH}
 
 Linux_RPM_Post_Include=	bsd.linux-rpm.mk
 
+.if ${USE_LINUX} == "c6"
+LINUX_DIST?=		centos
+LINUX_DIST_VER?=	6.2
+.else
 LINUX_DIST?=		fedora
 LINUX_DIST_VER?=	10
+.endif
 .   if  !defined(OVERRIDE_LINUX_NONBASE_PORTS) && \
         (${LINUX_DIST} == "fedora" && ${LINUX_DIST_VER} != 10)
 IGNORE=		bsd.linux-rpm.mk test failed: default package building at OSVERSION>=800076 was changed to linux-f10 ports, please define OVERRIDE_LINUX_NONBASE_PORTS to build other linux infrastructure ports
