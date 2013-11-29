@@ -89,6 +89,7 @@ SRC_DISTFILES=	basesystem-10.0-4.el6.src.rpm \
 		libidn-1.18-2.el6.src.rpm \
 		libselinux-2.0.94-5.2.el6.src.rpm \
 		libsepol-2.0.41-4.el6.src.rpm \
+		util-linux-ng-2.17.2-12.4.el6.src.rpm \
 		ncurses-5.7-3.20090208.el6.src.rpm \
 		pcre-7.8-3.1.el6.src.rpm \
 		popt-1.13-7.el6.src.rpm \
