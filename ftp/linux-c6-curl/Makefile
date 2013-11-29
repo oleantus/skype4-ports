@@ -22,6 +22,7 @@ ONLY_FOR_ARCHS=	i386 amd64
 USE_LINUX_RPM=	yes
 LINUX_RPM_ARCH=		i686
 BRANDELF_FILES=	usr/bin/curl
+SRC_DISTFILES=	curl-${PORTVERSION}-${RPMVERSION}.src.rpm
 USE_LDCONFIG=	yes
 
 PLIST_FILES=	usr/bin/curl usr/lib/libcurl.so.4 usr/lib/libcurl.so.4.1.1 \

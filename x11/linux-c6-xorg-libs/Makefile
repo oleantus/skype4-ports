@@ -47,6 +47,41 @@ DISTFILES=	libICE-1.0.6-1.el6.${LINUX_RPM_ARCH}.rpm \
 		libxkbfile-1.0.6-1.1.el6.${LINUX_RPM_ARCH}.rpm \
 		mesa-libGLw-6.5.1-10.el6.${LINUX_RPM_ARCH}.rpm
 
+SRC_DISTFILES=	libICE-1.0.6-1.el6.src.rpm \
+		libSM-1.1.0-7.1.el6.src.rpm \
+		libX11-1.3-2.el6.src.rpm \
+		libXScrnSaver-1.2.0-1.el6.src.rpm \
+		libXau-1.0.5-1.el6.src.rpm \
+		libXaw-1.0.6-4.1.el6.src.rpm \
+		libXcomposite-0.4.1-2.el6.src.rpm \
+		libXcursor-1.1.10-2.el6.src.rpm \
+		libXdamage-1.1.2-1.el6.src.rpm \
+		libXdmcp-1.0.3-1.el6.src.rpm \
+		libXevie-1.0.2-7.1.el6.src.rpm \
+		libXext-1.1-3.el6.src.rpm \
+		libXfixes-4.0.4-1.el6.src.rpm \
+		libXfont-1.4.1-2.el6_1.src.rpm \
+		libXft-2.1.13-4.1.el6.src.rpm \
+		libXi-1.3-3.el6.src.rpm \
+		libXinerama-1.1-1.el6.src.rpm \
+		libXmu-1.0.5-1.el6.src.rpm \
+		libXp-1.0.0-15.1.el6.src.rpm \
+		libXpm-3.5.8-2.el6.src.rpm \
+		libXrandr-1.3.0-4.el6.src.rpm \
+		libXrender-0.9.5-1.el6.src.rpm \
+		libXres-1.0.4-1.el6.src.rpm \
+		libXt-1.0.7-1.el6.src.rpm \
+		libXtst-1.0.99.2-3.el6.src.rpm \
+		libXv-1.0.5-1.el6.src.rpm \
+		libXvMC-1.0.4-8.1.el6.src.rpm \
+		libXxf86dga-1.1.1-1.el6.src.rpm \
+		libXxf86misc-1.0.2-1.el6.src.rpm \
+		libXxf86vm-1.1.0-1.el6.src.rpm \
+		libfontenc-1.0.5-2.el6.src.rpm \
+		libxcb-1.5-1.el6.src.rpm \
+		libxkbfile-1.0.6-1.1.el6.src.rpm \
+		mesa-libGLw-6.5.1-10.el6.src.rpm
+
 CONFLICTS=		linux-xorg-libs-[0-9]* linux-f8-xorg-libs-[0-9]* linux-f10-xorg-libs-[0-9]*
 
 

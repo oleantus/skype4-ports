@@ -14,6 +14,8 @@ PKGNAMEPREFIX=	linux-${USE_LINUX}-
 DISTFILES=		mesa-libGL-7.11-3.el6.i686.rpm \
 		mesa-libGLU-7.11-3.el6.i686.rpm \
 		freeglut-2.6.0-1.el6.i686.rpm
+SRC_DISTFILES=		mesa-7.11-3.el6.src.rpm \
+		freeglut-2.6.0-1.el6.src.rpm
 
 ALWAYS_KEEP_DISTFILES=  YES
 

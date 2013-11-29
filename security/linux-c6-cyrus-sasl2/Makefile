@@ -18,6 +18,7 @@ USE_LINUX_RPM=	yes
 LINUX_RPM_ARCH=		i686
 USE_LDCONFIG=	yes
 BRANDELF_FILES=	usr/sbin/sasldblistusers2 usr/sbin/saslpasswd2
+SRC_DISTFILES=	cyrus-sasl-${PORTVERSION}-${RPMVERSION}.src.rpm
 DESCR=	${.CURDIR}/../${PORTNAME}/pkg-descr
 
 PLIST_DIRS=	etc/sasl2 usr/lib/sasl2
