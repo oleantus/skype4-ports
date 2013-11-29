@@ -8,19 +8,16 @@ USE_LINUX=	c6
 
 CATEGORIES=	devel linux
 MAINTAINER=	emulation@FreeBSD.org
-COMMENT=	GLib bindings for D-Bus (Linux Fedora ${LINUX_DIST_VER})
+COMMENT=	GLib bindings for D-Bus (Linux CentOS 6)
 
 PKGNAMEPREFIX=	linux-${USE_LINUX}-
-MASTER_SITES=	http://vault.centos.org/${LINUX_DIST_VER}/os/i386/Packages/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${RPMVERSION}
-DIST_SUBDIR=	rpm/${LINUX_RPM_ARCH}/centos/${LINUX_DIST_VER}
 
 ONLY_FOR_ARCHS=	i386 amd64
 
 USE_LINUX_RPM=	yes
 USE_LINUX_APPS=	dbuslibs expat
 LINUX_RPM_ARCH=	i686
-LINUX_DIST_VER=	6.2
 BRANDELF_FILES=	usr/bin/dbus-binding-tool
 USE_LDCONFIG=	yes
 

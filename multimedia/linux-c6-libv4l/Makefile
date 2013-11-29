@@ -7,7 +7,6 @@ RPMVERSION=	2.el6
 USE_LINUX=	c6
 
 CATEGORIES=	multimedia linux
-MASTER_SITES=   http://vault.centos.org/${LINUX_DIST_VER}/os/i386/Packages/
 
 PKGNAMEPREFIX=	linux-c6-
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${RPMVERSION}

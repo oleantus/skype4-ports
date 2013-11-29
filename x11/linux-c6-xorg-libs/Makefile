@@ -8,11 +8,9 @@ USE_LINUX_APPS=		fontconfig
 
 CATEGORIES=	x11 linux
 MAINTAINER=		emulation@FreeBSD.org
-COMMENT=		Xorg libraries (Linux CentOS ${LINUX_DIST_VER})
+COMMENT=		Xorg libraries (Linux CentOS 6)
 
 PKGNAMEPREFIX=	linux-${USE_LINUX}-
-MASTER_SITES=	http://vault.centos.org/${LINUX_DIST_VER}/os/i386/Packages/
-DIST_SUBDIR=	rpm/${LINUX_RPM_ARCH}/centos/${LINUX_DIST_VER}
 
 DISTFILES=	libICE-1.0.6-1.el6.${LINUX_RPM_ARCH}.rpm \
 		libSM-1.1.0-7.1.el6.${LINUX_RPM_ARCH}.rpm \
@@ -54,7 +52,6 @@ CONFLICTS=		linux-xorg-libs-[0-9]* linux-f8-xorg-libs-[0-9]* linux-f10-xorg-libs
 
 USE_LINUX_RPM=		yes
 LINUX_RPM_ARCH=		i686
-LINUX_DIST_VER=		6.2
 USE_LDCONFIG=		yes
 
 #post-install:

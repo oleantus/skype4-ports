@@ -4,7 +4,8 @@ PORTNAME=		c6
 PORTVERSION=		6.2
 PORTREVISION=		1
 CATEGORIES=		emulators linux
-MASTER_SITES=		http://vault.centos.org/${PORTVERSION}/os/i386/Packages/
+MASTER_SITES=		${MASTER_SITE_CENTOS_LINUX}
+MASTER_SITE_SUBDIR=	${PORTVERSION}/os/${LINUX_RPM_ARCH:C/i.86/i386/}/Packages
 PKGNAMEPREFIX=		linux_base-
 DISTFILES=		${BIN_DISTFILES} ${SRC_DISTFILES}
 DIST_SUBDIR=		rpm/${LINUX_RPM_ARCH}/centos/${PORTVERSION}
@@ -59,7 +60,7 @@ BIN_DISTFILES=	basesystem-10.0-4.el6.noarch.rpm \
 
 .if defined(PACKAGE_BUILDING)
 
-MASTER_SITES+=	http://vault.centos.org/${PORTVERSION}/os/Source/SPackages/
+MASTER_SITE_SUBDIR+=	${PORTVERSION}/os/Source/SPackages
 
 SRC_DISTFILES=	basesystem-10.0-4.el6.src.rpm \
 		bash-4.1.2-8.el6.centos.src.rpm \

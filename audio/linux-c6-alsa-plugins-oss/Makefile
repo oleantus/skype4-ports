@@ -11,12 +11,10 @@ CATEGORIES=	audio linux
 MAINTAINER=	emulation@FreeBSD.org
 
 MAINTAINER=	hashiz@meridiani.jp
-COMMENT=	OSS plugin for ALSA (Linux CentOS ${LINUX_DIST_VER})
+COMMENT=	OSS plugin for ALSA (Linux CentOS 6)
 
 PKGNAMEPREFIX=	linux-${USE_LINUX}-
-MASTER_SITES=	http://vault.centos.org/${LINUX_DIST_VER}/os/i386/Packages/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${RPMVERSION}
-DIST_SUBDIR=	rpm/${LINUX_RPM_ARCH}/centos/${LINUX_DIST_VER}
 
 CONFLICTS=	linux-f10-alsa-plugins-oss-[0-9]*
 
@@ -24,7 +22,6 @@ ONLY_FOR_ARCHS=	i386 amd64
 USE_LINUX_RPM=	yes
 LINUX_RPM_ARCH=		i686
 NO_STAGE=	yes
-LINUX_DIST_VER=	6.2
 USE_LDCONFIG=	yes
 
 CONF_FILE=	etc/alsa/pcm/pcm-oss.conf
