@@ -128,9 +128,7 @@ curl_f10_FILE=		${LINUXBASE}/usr/lib/libcurl.so.4.1.1
 curl_c6_FILE=		${LINUXBASE}/usr/lib/libcurl.so.4.1.1
 curl_DETECT=		${curl${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 curl_PORT=		${PORTSDIR}/ftp/linux${LINUX_DIST_SUFFIX}-curl
-.  if ${LINUX_DIST_SUFFIX} == "-f10"
 curl_DEPENDS=		cyrus-sasl2 openldap
-.  endif
 
 cyrus-sasl2_f10_FILE=	${LINUXBASE}/usr/lib/libsasl2.so.2.0.22
 cyrus-sasl2_c6_FILE=	${LINUXBASE}/usr/lib/libsasl2.so.2.0.23
