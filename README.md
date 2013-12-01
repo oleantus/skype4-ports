@@ -51,8 +51,8 @@ If you want video calls support you should also replace linux_videodev2.h header
     # make patch
     # mv -i /sys/compat/linux/linux_videodev2.h{,.bak}
     # cp -i work/linux_v4l2/linux_videodev2.h /sys/compat/linux
- 
-However, this patch is already applied for FreeBSD 10 and CURRENT.
+
+Then rebuild/install the kernel. However, I should clarify that this patch is already applied for FreeBSD 10 and CURRENT.
     
 
 
