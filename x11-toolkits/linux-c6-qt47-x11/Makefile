@@ -20,6 +20,6 @@ ONLY_FOR_ARCHS=	i386 amd64
 USE_LINUX_RPM=	yes
 LINUX_DIST_VER=	5
 USE_LDCONFIG=	yes
-DESCR=		${.CURDIR}/../qt4-gui/pkg-descr
+#DESCR=		${.CURDIR}/../qt4-gui/pkg-descr
 
 .include <bsd.port.mk>
